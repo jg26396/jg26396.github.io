@@ -25,17 +25,17 @@
 
 /*Light mode style*/
 .light-mode {
-  --color-primary: #FFFFFF;
-  --color-secondary: #F56692;
-  --color-white: #454e56;
+  --color-primary: #03071E;
+  --color-secondary: #D00000;
+  --color-white: #FFFFFF;
   --color-black: #000;
-  --color-grey0: #f8f8f8;
-  --color-grey-1: #6c7983;
-  --color-grey-2: #6c7983;
-  --color-grey-3: #6c7983;
-  --color-grey-4: #454e56;
-  --color-grey-5: #f8f8f8;
-  --color-grey-6: #12181b;
+  --color-grey0: #FFBA08;
+  --color-grey-1: #FAA307;
+  --color-grey-2: #F48C06;
+  --color-grey-3: #E85D04;
+  --color-grey-4: #DC2F02;
+  --color-grey-5: #9D0208;
+  --color-grey-6: #6A040F;
 }
 
 body {
@@ -1030,7 +1030,7 @@ h4.timeline-title {
 }
 
 .inspiration-container .inspirations_ .inspiration-text p {
-  color: var(--color-grey-2);
+  color: var(--color-white);
   line-height: 2rem;
   padding-bottom: 1rem;
 }
