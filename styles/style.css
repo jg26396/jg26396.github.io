@@ -471,6 +471,8 @@ section {
 .timeline-container .timeline-item {
   position: relative;
   padding-left: 3rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
 }
 
 .timeline-container .timeline-item .timeline-icon {
