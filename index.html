@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fire Fighter in the Sky</title>
+    <!-- import links for the icons and fonts used throught the website-->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="main-content">
+    <!-- Sections used to set each page on the webpage-->
+    <!-- Home page section-->
+    <header class="section sec1 header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="img/IMG_6222.JPG" alt=""></img>
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">
+                    Hello, welcome to our project <span>Fire Fighter in the Sky</span> an automonous drone that will be
+                    used to put out fires
+                </h1>
+                <p>
+                    We are a group of Electrical and Computer Engineering undergraduate senior students from Georgia Southern University.
+                    As a final requirement of our college career, we must conduct and develop a research project that encapsulates and puts to practice the knowledge we have gained so far.
+                    This webpage is dedicated to documenting the development of our senior design project. 
+                </p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- About us page section-->
+        <section class="section sec2 About Us" id="about-us">
+            <div class="main-title">
+                <h2>About <span>us</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h2>Hello everyone!</h2>
+                    <p>
+                        For our senior design project, we decided to develop an autonomous fire detection unmanned aerial vehicle (UAV / Drone).
+                         We structured our project into three different areas: mechanical design, electrical design, and software development.
+                         We have created our mechanical design from scratch and focused on several variables (thrust, payload, aerodynamics, etc.) to successfully build a quadcopter UAV.
+                         The electrical design relied upon the proper application circuit analysis and control systems methods to successfully power and control the UAV.
+                         Finally, the last area, Software Development, consisted of the implementation of knowledge on Microcontrollers to command the electrical components such as motors and sensors.
+                         We implemented Convolutional Neural Networks to successfully identify fires in real-time with the Raspberry Pi and the Pi Camera Module.
+                         This would allow the drone to leverage computer vision algorithms to find fire-affected areas faster.
+                         Additionally, we also implemented simulation software (ArduPilot / DroneKit) for drone movement by using Python commands to the Pix Hawk controller.
+                    </p>
+                    <p>
+                        We decided to develop this project due to the possible effects that it can have in life-threatening situations, in this case, fire.
+                         The implementation of an autonomous drone that leverages computer vision algorithms to help address a fire could save lives.
+                         Firefighters would be able to address the human victims faster while a drone takes charge of putting off the fire.
+                         The firefighters would also be less exposed to smoke inhalation and burns.
+                         We believe that this project is able to improve the front-line response to fire hazards. 
+                    </p>
+                </div>
+
+                <!--Turn images into carisel-->
+                <div class="right-about">
+                    <div class="about-item">
+                        <img src="img/jamison.jfif" class="image" alt="Image of student">
+                        <div class="abt-text">
+                            <p class="large-text">Jamison G</p>
+                            <p class="small-text">Computer Engineer<br><br>Software design lead</p>
+                            <a href="https://www.linkedin.com/in/jamisongolson/" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <img src="img/john.jfif" class="image" alt="Image of student">
+                        <div class="abt-text">
+                            <p class="large-text">John B</p>
+                            <p class="small-text">Electrical Engineer<br><br>Team leader and mechanical design lead</p>
+                            <a href="https://www.linkedin.com/in/john-bailey-735a14173/" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="about-item">
+                        <img src="img/maria.jfif" class="image" alt="Image of student">
+                        <div class="abt-text">
+                            <p class="large-text">Maria G</p>
+                            <p class="small-text"> 
+                                Computer Engineer<br><br>Neural network design lead 
+                            </p>
+                            <a href="https://www.linkedin.com/in/maria-gonzalez-bocanegra/" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <img src="img/camiya.jfif" class="image" alt="Image of student">
+                        <div class="abt-text">
+                            <p class="large-text">Camiya F</p>
+                            <p class="small-text">Electrical Engineer<br><br>Electrical design lead</p>
+                            <a href=""></a>
+                            <a href="https://www.linkedin.com/in/camiya-felton-53a9b3199/" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Inspiration section-->
+        <section class="section sec3 Inspiration" id="inspiration">
+            <div class="inspiration-content">
+                <div class="main-title">
+                    <h2>Inspiration and<span> Ideas</span></h2>
+                </div>
+                <div class="inspiration-container">
+                    <div class="inspirations">
+                        <div class="inspirations_">
+                            <img src="img/drone_survey.png" alt="">
+                            <div class="inspiration-text">
+                                <h4>
+                                    <a href="https://scholarsarchive.byu.edu/cgi/viewcontent.cgi?article=2513&context=facpub" target="_blank">
+                                        Survey Drone
+                                    </a>
+                                </h4>
+                                <p>
+                                    This report was over the sunstanibility issues presented by the drone
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inspirations">
+                        <div class="inspirations_">
+                            <img src="img/drone_swarm.png" alt="">
+                            <div class="inspiration-text">
+                                <h4>
+                                    <a href="https://scholarsarchive.byu.edu/cgi/viewcontent.cgi?article=2513&context=facpub" target="_blank">
+                                        Swarm of Drones
+                                    </a>
+                                </h4>
+                                <p>
+                                    This was our presentation over sunstanibility
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inspirations">
+                        <div class="inspirations_">
+                            <img src="img/fire_ext_ball.jpg" alt="">
+                            <div class="inspiration-text">
+                                <h4>
+                                    <a href="https://mme.fiu.edu/wp-content/uploads/2013/04/T4_SkyFighters.pdf" target="_blank">
+                                        Fire Extinguisher Ball
+                                    </a>
+                                </h4>
+                                <p>
+                                    This was our initial project proposal
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Design page section-->
+        <section class="section sec4 Design" id="design">
+            <div class="design-content">
+                <div class="main-title">
+                    <h2>Design of <span>drone</span></h2>
+                </div>
+                <div class="design-container">
+                    <div class="designs">
+                        <div class="design_">
+                            <img src="img/first_design.png" alt="">
+                            <div class="design-text">
+                                <h4>
+                                    First design of drone
+                                </h4>
+                                <p>
+                                    The first iteration was a 3 tiered canopy that only allowed space for one microcontroller. 
+                                    We decided to step away from this design as there was no space for the likes of a camera and a place to store the battery.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="designs">
+                        <div class="design_">
+                            <img src="img/second_design.jpeg" alt="">
+                            <div class="design-text">
+                                <h4>
+                                    Second design of drone
+                                </h4>
+                                <p>
+                                    The second design included making the canopy one solid piece instead of having plates stacked on top of each other. 
+                                    During test, this design proved to not be level and vibration resistant during flight.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="designs">
+                        <div class="design_">
+                            <img src="img/final_design.jpg" alt="">
+                            <div class="design-text">
+                                <h4>
+                                    Final design of drone
+                                </h4>
+                                <p>
+                                    The final design went back to follow the tiered structure which would allow for the most surface area to mount components while also keeping the frame relatively stable and lightweight.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h4 class="timeline-title">Project Completion Timeline</h4>
+                <div class="timeline-container">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="timeline-duration">1/20/22-2/10/22</p>
+                            <h5>Final project proposal and ehtics</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="timeline-duration">2/3/22-2/24/22</p>
+                            <h5>Flight control for drone</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="timeline-duration">1/20/22-2/10/22</p>
+                            <h5>Test fire sensing</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="timeline-duration">2/24/22-3/31/22</p>
+                            <h5>Combine flight controller and fire sensing</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="timeline-duration">1/27/22-2/10/22</p>
+                            <h5>Finish drone assembly</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="timeline-duration">3/10/22-4/7/22</p>
+                            <h5>Final research</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="timeline-duration">2/3/22-2/17/22</p>
+                            <h5>Website creation</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="timeline-duration">4/14/22-4/22/22</p>
+                            <h5>Final presentation</span></h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Specifications page section-->
+        <section class="section sec5 Specifications" id="specifications">
+            <div class="specifications-container">
+                <div class="main-title">
+                    <h2>Specifications <span>Drone</span></h2>
+                </div>
+                <div class="top-specifications-content-container">
+                    <div class="left-specification">
+                        <div class="pixhawk-specifications">
+                            <div class="specification-text">
+                                <h4>Pixhawk</h4>
+                                <p>
+                                    All the electral used are listed below. All the electral used are listed below. All the electral used are listed below
+                                </p>
+                            </div>
+                        </div>
+                        <div class="camera-specifications">
+                            <div class="specification-text">
+                                <h4>Camera</h4>
+                                <p>
+                                    All the electral used are listed below. All the electral used are listed below. All the electral used are listed below
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-specification">
+                        <div class="motor-specifications">
+                            <div class="specification-text">
+                                <h4>Motor</h4>
+                                <p>
+                                    All the electral used are listed below. All the electral used are listed below. All the electral used are listed below
+                                </p>
+                            </div>
+                        </div>
+                        <div class="rasbpi-specifications">
+                            <div class="specification-text">
+                                <h4>Rasberry Pi</h4>
+                                <p>
+                                    All the electral used are listed below. All the electral used are listed below. All the electral used are listed below
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-specification-content-container">
+                    <div class="bottom-specification">
+                        <h4 class="component-list">Component List</h4>
+                        <div class="list-container">
+                            <ul class="list">
+                                <li class="list item-list">Pixhawk4</li>
+                                <li class="list item-list">Rasberry Pi 3 Model B</li>
+                                <li class="list item-list">x4 DC Brushless 800Kv</li>
+                                <li class="list item-list">x4 10-4.7 Propellors</li>
+                                <li class="list item-list">Pixy Cam</li>
+                                <li class="list item-list">x3 Servos</li>
+                                <li class="list item-list">4S LiPo Battery</li>
+                                <li class="list item-list">Battery pack</li>
+                                <li class="list item-list">3DR GPS</li>
+                                <li class="list item-list">x2 Lidar Sensors</li>
+                            </ul>
+                        </div>
+                        <div class="slideshow-container">
+                            <div class="mySlides fade item1">
+                                <img src="img/pixhawk.jpg" alt="" style="width:100%"></img>
+                            </div>
+
+                            <div class="mySlides fade item2">
+                                <img src="img/raspberrypi.jpg" alt="" style="width:100%"></img>
+                            </div>
+
+                            <div class="mySlides fade item3">
+                                <img src="img/q36.PNG" alt="" style="width:100%"></img>
+                            </div>
+
+                            <div class="mySlides fade item4">
+                                <img src="img/IMG_6222.JPG" alt="" style="width:100%"></img>
+                            </div>
+
+                            <div class="mySlides fade item5">
+                                <img src="img/pixycam.jpeg" alt="" style="width:100%"></img>
+                            </div>
+
+                            <div class="mySlides fade item6">
+                                <img src="img/servos.jpg" alt="" style="width:100%"></img>
+                            </div>
+
+                            <div class="mySlides fade item7">
+                                <img src="img/battery.jpg" alt="" style="width:100%"></img>
+                            </div>
+
+                            <div class="mySlides fade item8">
+                                <img src="img/batterypack.jpg" alt="" style="width:100%"></img>
+                            </div>
+
+                            <div class="mySlides fade item9">
+                                <img src="img/gps.jpeg" alt="" style="width:100%"></img>
+                            </div>
+
+                            <div class="mySlides fade item10">
+                                <img src="img/lidar.jpg" alt="" style="width:100%"></img>
+                            </div>
+                            <br>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(4)"></span>
+                                <span class="dot" onclick="currentSlide(5)"></span>
+                                <span class="dot" onclick="currentSlide(6)"></span>
+                                <span class="dot" onclick="currentSlide(7)"></span>
+                                <span class="dot" onclick="currentSlide(8)"></span>
+                                <span class="dot" onclick="currentSlide(9)"></span>
+                                <span class="dot" onclick="currentSlide(10)"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Presentations/Reports page section-->
+        <section class="section sec6 Presentations/Reports" id="presentations/reports">
+            <div class="report-content">
+                <div class="main-title">
+                    <h2>Reports and <span>Presentations</span></h2>
+                </div>
+                <h5>*Click on reports/presentations title to open document</h3>
+                <div class="report-container">
+                    <div class="reports">
+                        <div class="reports_">
+                            <img src="img/final_comp_R.png" alt="">
+                            <div class="report-text">
+                                <a href="Reports/" target="_blank">
+                                    <h4>
+                                        Final Comprehensive Report 
+                                    </h4>
+                                </a>
+                                <p>
+                                    This was our presentation over the topics/issues related to sunstanibility within our project
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reports">
+                        <div class="reports_">
+                            <img src="img/midterm_preview.png" alt="">
+                            <div class="report-text">
+                                <a href="Reports/Midterm_Presentation.pdf" target="_blank">
+                                    <h4>
+                                        Midterm Presentation
+                                    </h4>
+                                </a>
+                                <p>
+                                    This report was over the sunstanibility topics/issues presented by the drone
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reports">
+                        <div class="reports_">
+                            <img src="img/final_prop_preview.png" alt="">
+                            <div class="report-text">
+                                <a href="Reports/Final_Project_Proposal.pdf" target="_blank">
+                                    <h4>
+                                        Final Project Proposal
+                                    </h4>
+                                </a>
+                                <p>
+                                    This was our final project proposal explaining what our goal was and how we planned on completing it
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reports">
+                        <div class="reports_">
+                            <img src="img/ethics_R_Preview.png" alt="">
+                            <div class="report-text">
+                                <a href="Reports/Ethics_Report.pdf" target="_blank">
+                                    <h4>
+                                        Ethics Report
+                                    </h4>
+                                </a>
+                                <p>
+                                    This report...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reports">
+                        <div class="reports_">
+                            <img src="img/ethics_P_Preview.png" alt="">
+                            <div class="report-text">
+                                <a href="Reports/" target="_blank">
+                                    <h4>
+                                        Ethics Presentation
+                                    </h4>
+                                </a>
+                                <p>
+                                    This presentation...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reports">
+                        <div class="reports_">
+                            <img src="img/sus_R_Preview.png" alt="">
+                            <div class="report-text">
+                                <a href="Reports/Sustainability_report.pdf" target="_blank">
+                                    <h4>
+                                        Sunstanibility Report
+                                    </h4>
+                                </a>
+                                <p>
+                                    This presentation...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- buttons used to go through each page -->
+    <div class="controls">
+        <div class="control control-1 active-btn" data-id="home">
+            <i class="fa-solid fa-house"></i>
+        </div>
+        <div class="control control-2" data-id="about-us">
+            <i class="fa-solid fa-address-card"></i>
+        </div>
+        <div class="control control-3" data-id="inspiration">
+            <i class="fa-solid fa-lightbulb"></i>
+        </div>
+        <div class="control control-4" data-id="design">
+            <i class="fa-solid fa-sliders"></i>
+        </div>
+        <div class="control control-5" data-id="specifications">
+            <i class="fa-solid fa-compass-drafting"></i>
+        </div>
+        <div class="control control-6" data-id="presentations/reports">
+            <i class="fa-solid fa-book-open"></i>
+        </div>
+    </div>
+    <div class="theme-btn">
+        <i class="fa-solid fa-toggle-on"></i>
+    </div>
+    <!-- script tag used to import the javascript file-->
+    <script src="app.js"></script>
+</body>
+
+</html>
